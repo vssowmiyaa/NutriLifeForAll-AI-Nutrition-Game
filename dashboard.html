@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>NutriLife Dashboard</title>
+
+<style>
+
+body{
+background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+font-family:Arial;
+text-align:center;
+}
+
+table{
+margin:auto;
+margin-top:80px;
+background:white;
+border-collapse:collapse;
+width:70%;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+th,td{
+padding:15px;
+border:1px solid #ddd;
+}
+
+th{
+background:#ff6a00;
+color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>NutriLife Dashboard</h1>
+
+<table>
+
+<tr>
+<th>Ingredients</th>
+<th>Health Score</th>
+<th>Growth Score</th>
+<th>Sustainability Score</th>
+</tr>
+
+{% for s in scores %}
+
+<tr>
+
+<td>{{ s.ingredients }}</td>
+<td>{{ s.health }}</td>
+<td>{{ s.growth }}</td>
+<td>{{ s.sustainability }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/">
+<button>Back Home</button>
+</a>
+
+</body>
+
+</html>
