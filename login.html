@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>NutriLife Login</title>
+
+<style>
+
+body{
+background: linear-gradient(120deg,#f6d365,#fda085);
+font-family:Arial;
+}
+
+.card{
+
+width:350px;
+margin:auto;
+margin-top:150px;
+background:white;
+padding:40px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+
+}
+
+input{
+
+width:90%;
+padding:12px;
+margin:10px;
+border-radius:8px;
+border:1px solid gray;
+
+}
+
+button{
+
+padding:12px 25px;
+margin:10px;
+border:none;
+border-radius:25px;
+background:#4CAF50;
+color:white;
+cursor:pointer;
+
+}
+
+.guest{
+
+background:#2196F3;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>Login to NutriLife</h2>
+
+<form action="/ingredient">
+
+<input type="text" placeholder="Username" required>
+
+<input type="password" placeholder="Password" required>
+
+<br>
+
+<button type="submit">Login</button>
+
+</form>
+
+<a href="/ingredient">
+<button class="guest">Play as Guest</button>
+</a>
+
+</div>
+
+</body>
+</html>
