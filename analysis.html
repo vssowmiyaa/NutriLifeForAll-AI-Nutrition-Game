@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Ingredient Analysis</title>
+
+<style>
+
+body{
+background: linear-gradient(135deg,#ff9966,#ff5e62);
+font-family:Arial;
+text-align:center;
+}
+
+.card{
+background:white;
+width:450px;
+margin:auto;
+margin-top:120px;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+h2{
+color:#333;
+}
+
+p{
+font-size:18px;
+margin:10px;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:#673ab7;
+color:white;
+cursor:pointer;
+margin:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>Analysis of Ingredient</h2>
+
+<p><b>Ingredients:</b> {{ ingredients }}</p>
+
+<hr>
+
+<p>Calories: {{ calories }}</p>
+<p>CO₂ Emission: {{ co2 }}</p>
+<p>Water Usage: {{ water }}</p>
+<p>Food Waste: {{ waste }}</p>
+
+<hr>
+
+<h3>Scores</h3>
+
+<p>Health Score: {{ health }}</p>
+<p>Growth Score: {{ growth }}</p>
+<p>Sustainability Score: {{ sustainability }}</p>
+
+<br>
+
+<a href="/dashboard">
+<button>View Dashboard</button>
+</a>
+
+<a href="/">
+<button>Home</button>
+</a>
+
+</div>
+
+</body>
+</html>
