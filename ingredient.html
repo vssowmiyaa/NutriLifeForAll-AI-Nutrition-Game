@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>NutriLife - Select Ingredient</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background: linear-gradient(135deg,#00c9ff,#92fe9d);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.container{
+
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+text-align:center;
+width:400px;
+
+}
+
+h2{
+color:#333;
+margin-bottom:25px;
+}
+
+select{
+
+width:90%;
+padding:12px;
+font-size:16px;
+border-radius:8px;
+border:1px solid #ccc;
+margin-bottom:20px;
+
+}
+
+button{
+
+padding:12px 30px;
+font-size:16px;
+border:none;
+border-radius:25px;
+background:linear-gradient(45deg,#ff6a00,#ee0979);
+color:white;
+cursor:pointer;
+transition:0.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+box-shadow:0 6px 20px rgba(0,0,0,0.3);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Select Ingredient</h2>
+
+<form action="/analyze" method="post">
+
+<select name="ingredient" multiple size="8">
+<option value="apple">Apple</option>
+<option value="banana">Banana</option>
+<option value="orange">Orange</option>
+<option value="grapes">Grapes</option>
+<option value="strawberry">Strawberry</option>
+<option value="mango">Mango</option>
+<option value="pineapple">Pineapple</option>
+<option value="watermelon">Watermelon</option>
+<option value="rice">Rice</option>
+<option value="wheat">Wheat</option>
+<option value="bread">Bread</option>
+<option value="oats">Oats</option>
+<option value="corn">Corn</option>
+<option value="potato">Potato</option>
+<option value="sweet_potato">Sweet Potato</option>
+<option value="tomato">Tomato</option>
+<option value="onion">Onion</option>
+<option value="carrot">Carrot</option>
+<option value="broccoli">Broccoli</option>
+<option value="cabbage">Cabbage</option>
+<option value="spinach">Spinach</option>
+<option value="milk">Milk</option>
+<option value="cheese">Cheese</option>
+<option value="butter">Butter</option>
+<option value="yogurt">Yogurt</option>
+<option value="egg">Egg</option>
+<option value="chicken">Chicken</option>
+<option value="beef">Beef</option>
+<option value="fish">Fish</option>
+<option value="tofu">Tofu</option>
+<option value="lentils">Lentils</option>
+<option value="beans">Beans</option>
+<option value="peas">Peas</option>
+<option value="almonds">Almonds</option>
+<option value="peanuts">Peanuts</option>
+
+</select>
+
+<br>
+
+<button type="submit">Analyze Ingredient</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
